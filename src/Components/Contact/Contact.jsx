@@ -4,6 +4,7 @@ import ContactImage from '../../assets/contact/contact.jpg';
 
 export default function Contact() {
 
+    // state
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -11,6 +12,7 @@ export default function Contact() {
     const [errors, setErrors] = useState({});
     const [submittedData, setSubmittedData] = useState(null);
 
+    // function 
     const validateForm = () => {
         let isValid = true;
         const newErrors = {};
